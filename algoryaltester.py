@@ -50,7 +50,8 @@ def results(write_to_config_file):
 	data = {
 		"status": status,
 		"output": test_output,
-		"time": result_time
+		"time": result_time,
+		"number_of_tests": test_number
 	}
 	if write_to_config_file:
 		with open('test.json', 'w+') as f:
@@ -166,5 +167,3 @@ start_time = 0
 end_time = 0
 result_time = 0
 test_output = []
-
-results(True)
